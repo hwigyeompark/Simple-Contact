@@ -16,10 +16,14 @@ export  class ContactItem extends Component{
 class ContactList extends Component{
     render(){
         const named = ["박휘겸", "휘겸박", "홍길동", "길동홍"];
+        const email = ["phg@dgsw.hs.kr", "hgp@gmail.com", "hkd@naver.com", "kdh@daum.net"];
         return(
             <div>
                 {
-                    named.map((item) => <ContactItem itemName = {item}/>)
+                    named.map((item) => <ContactItem itemName = {item} />)
+                }
+                {
+                    email.map((item) => <ContactItem itemName = {item} />)
                 }
             </div>
         )
