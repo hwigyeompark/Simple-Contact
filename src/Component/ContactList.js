@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 
 export  class ContactItem extends Component{
     static defaultProps = {
-      noName : "No Name"
+      itemName : "No Name"
     };
     render(){
         return(
           <div>
-            <div>{this.props.noName}</div>
+            <div>{this.props.itemName}</div>
           </div>
         );
     }
